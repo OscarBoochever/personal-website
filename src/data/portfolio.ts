@@ -39,7 +39,7 @@ export const projects: Project[] = [
     id: "solvang",
     title: "City of Solvang",
     description:
-      "Municipal website for Solvang, California — 'The Danish Capital of America.' Features online utilities, permits, public records, and an AI assistant for city services.",
+      "Municipal website for Solvang, California, known as 'The Danish Capital of America.' Features online utilities, permits, public records, and an AI assistant for city services.",
     tags: ["Municipal", "Custom CMS", "AI"],
     link: "https://solvang-website.vercel.app",
     image: "/portfolio/solvang.png",
