@@ -27,9 +27,6 @@ export default function Services() {
             Services
           </h2>
           <div className="w-20 h-1 bg-olive mx-auto rounded-full" />
-          <p className="mt-6 text-charcoal/70 max-w-2xl mx-auto text-lg">
-            Helping government agencies and nonprofits achieve their goals through technology, analysis, and strategy.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">

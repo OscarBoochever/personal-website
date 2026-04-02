@@ -58,9 +58,9 @@ export const projects: Project[] = [
   },
   {
     id: "jackson",
-    title: "Jackson County Community Care Portal",
+    title: "Jackson County Ohio",
     description:
-      "Digital platform connecting residents who need assistance with volunteers and local organizations.",
+      "Community Care Portal connecting residents who need assistance with volunteers and local organizations.",
     tags: ["Community", "Social Services", "Municipal"],
     link: "https://jackson-community-care-portal.vercel.app",
     image: "/portfolio/jackson.png",

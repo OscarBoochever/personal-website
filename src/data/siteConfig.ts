@@ -46,9 +46,9 @@ export const aboutContent = {
 };
 
 export const contactContent = {
-  heading: "Get in Touch",
+  heading: "Contact",
   description:
-    "Whether you're a government agency, nonprofit, business, or individual, I'd love to hear from you. I'm open to projects of all kinds, from technical solutions to strategic advice.",
+    "Government agency, nonprofit, business, or individual interested in working together? Reach out and I'll be in touch.",
   formAction: "https://formspree.io/f/mzdapkvq",
 };
 
