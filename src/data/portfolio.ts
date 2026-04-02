@@ -37,16 +37,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "fpa-lens",
-    title: "Southeast Louisiana Flood Authority",
-    description:
-      "Public transparency dashboard for the Southeast Louisiana Flood Protection Authority. Real-time insight into flood defense infrastructure, maintenance, and operations.",
-    tags: ["Dashboard", "Transparency", "Infrastructure"],
-    link: "https://fpa-lens.vercel.app",
-    image: "/portfolio/fpa.png",
-    linkText: "Visit Site",
-  },
-  {
     id: "cavalier",
     title: "Cavalier Consulting",
     description:
@@ -54,6 +44,16 @@ export const projects: Project[] = [
     tags: ["Government Affairs", "Policy", "Virginia"],
     link: "https://cavalierconsultingva.com",
     image: "/portfolio/cavalier.png",
+    linkText: "Visit Site",
+  },
+  {
+    id: "fpa-lens",
+    title: "Southeast Louisiana Flood Authority",
+    description:
+      "Public transparency dashboard for the Southeast Louisiana Flood Protection Authority. Real-time insight into flood defense infrastructure, maintenance, and operations.",
+    tags: ["Dashboard", "Transparency", "Infrastructure"],
+    link: "https://fpa-lens.vercel.app",
+    image: "/portfolio/fpa.png",
     linkText: "Visit Site",
   },
   {
