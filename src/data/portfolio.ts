@@ -41,7 +41,7 @@ export const projects: Project[] = [
     title: "Cavalier Consulting",
     description:
       "Website for a boutique Virginia government affairs and lobbying firm specializing in legislative advocacy, policy research, and bipartisan coalition building.",
-    tags: ["Government Affairs", "Policy", "Virginia"],
+    tags: ["Web Design", "Government Affairs"],
     link: "https://cavalierconsultingva.com",
     image: "/portfolio/cavalier.png",
     linkText: "Visit Site",
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     id: "fpa-lens",
     title: "Southeast Louisiana Flood Authority",
     description:
-      "Public transparency dashboard for the Southeast Louisiana Flood Protection Authority. Real-time insight into flood defense infrastructure, maintenance, and operations.",
+      "Public transparency dashboard with real-time insight into flood defense infrastructure, maintenance, and operations.",
     tags: ["Dashboard", "Transparency", "Infrastructure"],
     link: "https://fpa-lens.vercel.app",
     image: "/portfolio/fpa.png",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     id: "jackson",
     title: "Jackson County Community Care Portal",
     description:
-      "Digital platform connecting Jackson County residents who need assistance with volunteers and local organizations. Residents submit requests, facilitators match them with resources, and community members respond with support.",
+      "Digital platform connecting residents who need assistance with volunteers and local organizations.",
     tags: ["Community", "Social Services", "Municipal"],
     link: "https://jackson-community-care-portal.vercel.app",
     image: "/portfolio/jackson.png",
