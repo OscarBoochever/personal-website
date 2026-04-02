@@ -47,16 +47,6 @@ export const projects: Project[] = [
     linkText: "Visit Site",
   },
   {
-    id: "jackson",
-    title: "Jackson County Community Care Portal",
-    description:
-      "Digital platform connecting Jackson County residents who need assistance with volunteers and local organizations. Residents submit requests, facilitators match them with resources, and community members respond with support.",
-    tags: ["Community", "Social Services", "Municipal"],
-    link: "https://jackson-community-care-portal.vercel.app",
-    image: "/portfolio/jackson.png",
-    linkText: "Visit Site",
-  },
-  {
     id: "cavalier",
     title: "Cavalier Consulting",
     description:
@@ -64,6 +54,16 @@ export const projects: Project[] = [
     tags: ["Government Affairs", "Policy", "Virginia"],
     link: "https://cavalierconsultingva.com",
     image: "/portfolio/cavalier.png",
+    linkText: "Visit Site",
+  },
+  {
+    id: "jackson",
+    title: "Jackson County Community Care Portal",
+    description:
+      "Digital platform connecting Jackson County residents who need assistance with volunteers and local organizations. Residents submit requests, facilitators match them with resources, and community members respond with support.",
+    tags: ["Community", "Social Services", "Municipal"],
+    link: "https://jackson-community-care-portal.vercel.app",
+    image: "/portfolio/jackson.png",
     linkText: "Visit Site",
   },
   {
