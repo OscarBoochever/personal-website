@@ -62,7 +62,7 @@ export const projects: Project[] = [
     description:
       "Website for a boutique Virginia government affairs and lobbying firm specializing in legislative advocacy, policy research, and bipartisan coalition building.",
     tags: ["Government Affairs", "Policy", "Virginia"],
-    link: "https://cavalier-consulting-psi.vercel.app",
+    link: "https://cavalierconsultingva.com",
     image: "/portfolio/cavalier.png",
     linkText: "Visit Site",
   },
