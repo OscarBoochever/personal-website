@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
 import { projects } from "@/data/portfolio";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 const INITIAL_COUNT = 6;
 
@@ -29,6 +30,7 @@ function ProjectImage({ image, title, link }: { image: string; title: string; li
 
 export default function Portfolio() {
   const [showAll, setShowAll] = useState(false);
+  const isMobile = useIsMobile();
   const visibleProjects = showAll ? projects : projects.slice(0, INITIAL_COUNT);
   const hasMore = projects.length > INITIAL_COUNT;
 
@@ -36,7 +38,7 @@ export default function Portfolio() {
     <section id="portfolio" className="py-20 md:py-32 bg-offwhite">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={isMobile ? false : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
@@ -52,10 +54,10 @@ export default function Portfolio() {
           {visibleProjects.map((project, index) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0, y: 20 }}
+              initial={isMobile ? false : { opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.25, delay: index * 0.05 }}
+              transition={{ duration: 0.25, delay: isMobile ? 0 : index * 0.05 }}
               className="group bg-cream rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-olive/5"
             >
               {/* Static Image Preview */}
@@ -123,7 +125,7 @@ export default function Portfolio() {
         {/* Show More / Show Less Button */}
         {hasMore && (
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={isMobile ? false : { opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.2 }}

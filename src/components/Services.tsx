@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Code2, BarChart3, LineChart, Users, LucideIcon } from "lucide-react";
 import { services } from "@/data/services";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 // Icon mapping
 const iconMap: Record<string, LucideIcon> = {
@@ -13,11 +14,12 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export default function Services() {
+  const isMobile = useIsMobile();
   return (
     <section id="services" className="py-20 md:py-32 bg-cream">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={isMobile ? false : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
@@ -36,10 +38,10 @@ export default function Services() {
             return (
               <motion.div
                 key={service.id}
-                initial={{ opacity: 0, y: 20 }}
+                initial={isMobile ? false : { opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.25, delay: index * 0.05 }}
+                transition={{ duration: 0.25, delay: isMobile ? 0 : index * 0.05 }}
                 className="group bg-offwhite rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-olive/5"
               >
                 <div className="flex items-start gap-4">

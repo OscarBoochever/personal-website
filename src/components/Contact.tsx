@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, Mail, CheckCircle, AlertCircle } from "lucide-react";
 import { siteConfig, contactContent } from "@/data/siteConfig";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -14,6 +15,7 @@ export default function Contact() {
     message: "",
   });
   const [status, setStatus] = useState<FormStatus>("idle");
+  const isMobile = useIsMobile();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -54,7 +56,7 @@ export default function Contact() {
     <section id="contact" className="py-20 md:py-32 bg-cream">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={isMobile ? false : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
@@ -70,14 +72,14 @@ export default function Contact() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={isMobile ? false : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: isMobile ? 0 : 0.2 }}
           className="bg-offwhite rounded-2xl shadow-sm p-6 md:p-10 border border-olive/5"
         >
           {/* Direct Email Link */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 mb-8 pb-8 border-b border-olive/10 text-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 mb-8 pb-8 border-b border-olive/10 text-center">
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5 text-olive" />
               <span className="text-charcoal/70">Or email me directly at</span>

@@ -53,5 +53,5 @@ export const contactContent = {
 };
 
 export const footerContent = {
-  copyright: `© ${new Date().getFullYear()} Oscar Boochever. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} Oscar Boochever`,
 };

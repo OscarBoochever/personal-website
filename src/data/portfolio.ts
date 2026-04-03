@@ -120,14 +120,4 @@ export const projects: Project[] = [
     linkText: "View Demo",
     demo: true,
   },
-  {
-    id: "proright",
-    title: "ProRight",
-    description:
-      "Strategic writing mentorship for executives, consultants, and government professionals. Helps professionals develop authentic voice that stands apart from AI-generated content.",
-    tags: ["Professional Development", "Writing", "Executive"],
-    link: "https://proright.org",
-    image: "/portfolio/proright.png",
-    linkText: "Visit Site",
-  },
 ];

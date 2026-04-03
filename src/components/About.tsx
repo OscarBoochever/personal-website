@@ -4,13 +4,15 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Download } from "lucide-react";
 import { aboutContent } from "@/data/siteConfig";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 export default function About() {
+  const isMobile = useIsMobile();
   return (
     <section id="about" className="py-20 md:py-32 bg-offwhite">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={isMobile ? false : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
@@ -25,10 +27,10 @@ export default function About() {
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
           {/* Headshot */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={isMobile ? false : { opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: isMobile ? 0 : 0.2 }}
             className="flex flex-col items-center lg:items-start w-full lg:w-auto flex-shrink-0"
           >
             <div className="relative w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden border-4 border-olive/20 shadow-lg mx-auto lg:mx-0">
@@ -55,10 +57,10 @@ export default function About() {
 
           {/* Bio Content */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={isMobile ? false : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: isMobile ? 0 : 0.3 }}
             className="flex-1"
           >
             <div className="space-y-5 text-charcoal/80 leading-relaxed">
