@@ -15,12 +15,31 @@ export const metadata: Metadata = {
     "Consultant and product builder helping state and local governments operate more effectively through custom software, data analysis, policy consulting, and data visualization.",
   keywords: [
     "government technology",
+    "govtech",
+    "civic tech",
+    "state and local government technology",
+    "government technology consultant",
     "policy consultant",
+    "government dashboard developer",
+    "public safety dashboard",
+    "government data visualization",
+    "custom government software",
+    "government website developer",
+    "municipal website design",
+    "criminal justice data analytics",
+    "police data dashboard",
+    "consent decree analytics",
+    "public safety analytics",
+    "crime data visualization",
+    "government technology consulting firm",
+    "hire govtech consultant",
+    "government software developer",
+    "state government consultant",
+    "local government technology",
+    "municipal technology",
     "data analysis",
     "public sector",
-    "data visualization",
     "government consulting",
-    "civic technology",
   ],
   authors: [{ name: "Oscar Boochever" }],
   creator: "Oscar Boochever",
@@ -74,6 +93,46 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={lato.variable}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Oscar Boochever",
+              jobTitle: "Government Technology & Policy Consultant",
+              url: "https://oscarboochever.com",
+              image: "https://oscarboochever.com/headshot.jpg",
+              description:
+                "Consultant and product builder helping state and local governments operate more effectively through custom software, data analysis, policy consulting, and data visualization.",
+              sameAs: [
+                "https://www.linkedin.com/in/oscar-boochever-531010ba/",
+                "https://github.com/oscarboochever",
+              ],
+              knowsAbout: [
+                "Government Technology",
+                "Civic Tech",
+                "Criminal Justice Data Analytics",
+                "Public Safety Dashboards",
+                "State and Local Government",
+                "Data Visualization",
+                "Policy Analysis",
+              ],
+              alumniOf: [
+                {
+                  "@type": "CollegeOrUniversity",
+                  name: "Harvard Kennedy School",
+                },
+                {
+                  "@type": "CollegeOrUniversity",
+                  name: "Cornell University",
+                },
+              ],
+            }),
+          }}
+        />
+      </head>
       <body className="font-sans antialiased bg-offwhite text-charcoal overflow-x-hidden">
         {children}
       </body>
