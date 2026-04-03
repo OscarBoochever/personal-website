@@ -46,9 +46,6 @@ export default function Portfolio() {
             Portfolio
           </h2>
           <div className="w-20 h-1 bg-olive mx-auto rounded-full" />
-          <p className="mt-6 text-charcoal/70 max-w-2xl mx-auto text-lg">
-            Selected projects showcasing web development, data visualization, and government technology.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
