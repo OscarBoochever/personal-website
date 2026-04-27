@@ -17,7 +17,7 @@ export const siteConfig = {
 export const navigation = [
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
-  { name: "Portfolio", href: "#portfolio" },
+  { name: "Selected Work", href: "#selected-work" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -30,7 +30,7 @@ export const heroContent = {
   },
   ctaSecondary: {
     text: "See My Work",
-    href: "#portfolio",
+    href: "#selected-work",
   },
 };
 
@@ -47,8 +47,7 @@ export const aboutContent = {
 
 export const contactContent = {
   heading: "Contact",
-  description:
-    "Interested in working together? Reach out and I'll be in touch.",
+  description: "Interested in working together? Fill out the form below or email me at ",
   formAction: "https://formspree.io/f/mzdapkvq",
 };
 

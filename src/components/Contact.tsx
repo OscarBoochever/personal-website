@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Mail, CheckCircle, AlertCircle } from "lucide-react";
+import { Send, CheckCircle, AlertCircle } from "lucide-react";
 import { siteConfig, contactContent } from "@/data/siteConfig";
 import { useIsMobile } from "@/hooks/useIsMobile";
 
@@ -68,6 +68,13 @@ export default function Contact() {
           <div className="w-20 h-1 bg-olive mx-auto rounded-full" />
           <p className="mt-6 text-charcoal/70 max-w-2xl mx-auto text-lg">
             {contactContent.description}
+            <a
+              href={`mailto:${siteConfig.email}`}
+              className="text-olive font-medium hover:underline"
+            >
+              {siteConfig.email}
+            </a>
+            .
           </p>
         </motion.div>
 
@@ -78,21 +85,6 @@ export default function Contact() {
           transition={{ duration: 0.6, delay: isMobile ? 0 : 0.2 }}
           className="bg-offwhite rounded-2xl shadow-sm p-6 md:p-10 border border-olive/5"
         >
-          {/* Direct Email Link */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 mb-8 pb-8 border-b border-olive/10 text-center">
-            <div className="flex items-center gap-2">
-              <Mail className="w-5 h-5 text-olive" />
-              <span className="text-charcoal/70">Or email me directly at</span>
-            </div>
-            <a
-              href={`mailto:${siteConfig.email}`}
-              className="text-olive font-medium hover:underline"
-            >
-              {siteConfig.email}
-            </a>
-          </div>
-
-          {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Name Field */}
