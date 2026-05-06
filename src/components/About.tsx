@@ -47,7 +47,7 @@ export default function About() {
             {/* Download CV Button - visible on desktop next to photo */}
             <a
               href={aboutContent.resumeLink}
-              download
+              download="Oscar Boochever Resume.pdf"
               className="hidden lg:flex items-center gap-2 mt-6 px-6 py-3 bg-olive text-white font-medium rounded-lg hover:bg-olive/90 transition-colors min-h-[48px]"
             >
               <Download size={18} />
@@ -74,7 +74,7 @@ export default function About() {
             {/* Download CV Button - visible on mobile/tablet below text */}
             <a
               href={aboutContent.resumeLink}
-              download
+              download="Oscar Boochever Resume.pdf"
               className="lg:hidden inline-flex items-center gap-2 mt-8 px-6 py-3 bg-olive text-white font-medium rounded-lg hover:bg-olive/90 transition-colors min-h-[48px]"
             >
               <Download size={18} />
