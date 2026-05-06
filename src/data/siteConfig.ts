@@ -37,7 +37,7 @@ export const heroContent = {
 export const aboutContent = {
   heading: "About Me",
   headshot: "/headshot.jpg",
-  resumeLink: "/resume.pdf",
+  resumeLink: "/Oscar%20Boochever%20Resume.pdf",
   bio: [
     "I help state and local governments provide better public services. As a consultant and product developer, I combine technical skills with policy expertise to solve real problems, whether that means building custom software, analyzing complex data, or advising on strategic initiatives.",
     "I'm passionate about tackling major social issues, with particular expertise in the realm of criminal justice policy. I believe in safely reducing mass incarceration and racial inequities in the criminal legal system, taking a holistic lens from policing through reentry. Beyond the criminal legal system, I'm excited about implementation: turning policy ideas into reality to more effectively deliver government services.",
