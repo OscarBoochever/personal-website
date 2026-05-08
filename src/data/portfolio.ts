@@ -79,15 +79,6 @@ export const projects: Project[] = [
     demo: true,
   },
   {
-    id: "nola-dashboard",
-    title: "NOLA Operations Dashboard",
-    description:
-      "Internal operations dashboard for the City of New Orleans, providing municipal staff with real-time metrics and administrative tools.",
-    link: "https://nola-dashboard.vercel.app",
-    image: "/portfolio/nola.png",
-    demo: true,
-  },
-  {
     id: "cumberland",
     title: "Cumberland County Youth Health Data Explorer",
     description:
