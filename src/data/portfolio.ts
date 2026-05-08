@@ -20,12 +20,20 @@ export const projects: Project[] = [
     image: "/portfolio/rtci.png",
   },
   {
-    id: "dfct",
-    title: "Data for Community Trust",
+    id: "fpa-lens",
+    title: "Southeast Louisiana Flood Authority",
     description:
-      "Philanthropically-funded pilot site supporting honest, actionable conversations between communities and public safety agencies.",
-    link: "https://dataforcommunitytrust.org/hazel-crest",
-    image: "/portfolio/dct.png",
+      "Public transparency dashboard with real-time insight into flood defense infrastructure, maintenance, and operations.",
+    link: "https://www.fpalens.org/",
+    image: "/portfolio/fpa.png",
+  },
+  {
+    id: "jackson",
+    title: "Jackson Community Care Portal",
+    description:
+      "Community Care Portal for Jackson County, Ohio, connecting residents in need with volunteers and local organizations.",
+    link: "https://jackson-community-care-portal.vercel.app",
+    image: "/portfolio/jackson.png",
   },
   {
     id: "cavalier",
@@ -36,20 +44,12 @@ export const projects: Project[] = [
     image: "/portfolio/cavalier.png",
   },
   {
-    id: "fpa-lens",
-    title: "Southeast Louisiana Flood Authority",
+    id: "dfct",
+    title: "Data for Community Trust",
     description:
-      "Public transparency dashboard with real-time insight into flood defense infrastructure, maintenance, and operations.",
-    link: "https://fpa-lens.vercel.app",
-    image: "/portfolio/fpa.png",
-  },
-  {
-    id: "jackson",
-    title: "Jackson Community Care Portal",
-    description:
-      "Community Care Portal for Jackson County, Ohio, connecting residents in need with volunteers and local organizations.",
-    link: "https://jackson-community-care-portal.vercel.app",
-    image: "/portfolio/jackson.png",
+      "Philanthropically-funded pilot site supporting honest, actionable conversations between communities and public safety agencies.",
+    link: "https://dataforcommunitytrust.org/hazel-crest",
+    image: "/portfolio/dct.png",
   },
   {
     id: "baldwin",
