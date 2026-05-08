@@ -61,14 +61,6 @@ export const projects: Project[] = [
     demo: true,
   },
   {
-    id: "essayright",
-    title: "EssayRight",
-    description:
-      "Essay coaching and writing mentorship platform helping students from middle school through PhD programs develop authentic writing voice.",
-    link: "https://essayright.org",
-    image: "/portfolio/essayright.png",
-  },
-  {
     id: "mansfield",
     title: "City of Mansfield Events Calendar",
     description:
