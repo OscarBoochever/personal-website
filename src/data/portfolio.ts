@@ -89,9 +89,9 @@ export const projects: Project[] = [
   },
   {
     id: "lmpd",
-    title: "Louisville Citizen Stop Analytics",
+    title: "Louisville Stop Analytics",
     description:
-      "Analytics platform surfacing racial disparities in Louisville Metro Police stops, with officer-level outlier detection, veil-of-darkness and hit-rate regressions, use-of-force analysis, and live-updating findings.",
+      "Surfaces racial disparities in LMPD stops with officer-level outlier detection, veil-of-darkness and hit-rate regressions, and use-of-force analysis.",
     link: "https://lmpd-analytics.vercel.app/",
     image: "/portfolio/lmpd.png",
     demo: true,
